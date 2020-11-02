@@ -5,25 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "migrate": " sequelize db:migrate",
-    "dev": "nodemon src/server --exec babel-node -e js",
-    "start": "node src/server"
+    "start": "nodemon -e js,graphql src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lassanadiakite/prisma.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lassanadiakite/prisma/issues"
+  },
+  "homepage": "https://github.com/lassanadiakite/prisma#readme",
   "dependencies": {
-    "apollo-server": "^2.19.0",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1",
-    "bcryptjs": "^2.4.3",
-    "dotenv": "^8.2.0",
-    "install": "^0.13.0",
-    "jsonwebtoken": "^8.5.1",
+    "graphql-yoga": "^1.18.3",
     "nodemon": "^2.0.6",
-    "sequelize": "^6.3.5",
-    "sequelize-cli": "^6.2.0",
-    "sqlite3": "^5.0.0"
+    "prisma-binding": "^2.3.16"
   }
 }
